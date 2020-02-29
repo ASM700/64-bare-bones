@@ -6,6 +6,8 @@ You have to do many things, like enabling the A20 line, setting up paging, globa
 
 So I have compiled all that code into *one simple file*. 512 bytes, too! It enables A20, both 32-bit and 64-bit GDT, PAE and 32-bit and 64-bit mode.
 
+This actually fits in 355 bytes (without the boot signature), so there's space for improvement.
+
 You can use it for your bootloader,kernel,etc.
 
 It prints "P" for protected mode, then "L" if it is in long mode, otherwise it prints "N" (not supported)
